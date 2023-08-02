@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,6 +11,7 @@ import Contact from './routes/contact/Contact';
 import Members from './routes/members/Members';
 import Events from './routes/events/Events';
 import Error from './routes/error/Error';
+import Admin from './routes/admin/Admin';
 
 const router = createBrowserRouter([
   {
@@ -34,9 +35,14 @@ const router = createBrowserRouter([
     element: <Events/>,
   },
   {
+    path: "/admin",
+    element: <Admin/>,
+  },
+  {
     path: "/*",
     element: <Error/>,
   },
+  
 ]);
 
 
