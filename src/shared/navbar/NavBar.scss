@@ -1,13 +1,43 @@
 @import "./_variables";
 
 .nav-bar {
-    background-color: $navbar-bg;
+  background-color: $navbar-bg;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: clamp(1.5rem, 1vw, 7rem);
 }
 
-.nav-link {
-    color: $navbar-fc;
+nav {
+  margin-left: auto;
+  padding-right: 10%;
+}
+
+@media (max-width: 900px) {
+  nav {
+    visibility: collapse;
+  }
+}
+
+a {
+  padding: 0 1rem;
+  color: $navbar-fc;
+  text-decoration: none;
+}
+
+a:hover {
+  // TBD
+  color: rgba(0, 0, 0, 0.501);
 }
 
 .nav-brand {
-    color: $navbar-fc
+  color: $navbar-fc;
+}
+
+img {
+  padding: 0.5rem 0.8rem;
+  width: 80px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
