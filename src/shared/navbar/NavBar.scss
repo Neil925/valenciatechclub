@@ -1,0 +1,55 @@
+@import "./_variables";
+
+.nav-bar {
+  background-color: $navbar-bg;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: clamp(1.5rem, 1vw, 7rem);
+}
+
+.nav-bar>nav {
+  margin-left: auto;
+  padding-right: 5%;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin-right: 3%;
+  border: none;
+  visibility: collapse;
+}
+
+@media (max-width: 900px) {
+  .nav-bar>nav {
+    visibility: collapse;
+  }
+
+  button {
+    visibility: visible;
+  }
+}
+
+.nav-bar>nav>a {
+  padding: 0 1rem;
+  color: $navbar-fc;
+  text-decoration: none;
+}
+
+.nav-bar>nav>a:hover {
+  // TBD
+  color: rgba(0, 0, 0, 0.501);
+}
+
+.nav-brand {
+  color: $navbar-fc;
+}
+
+.nav-brand>img {
+  padding: 0.5rem 0.8rem;
+  width: 80px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
