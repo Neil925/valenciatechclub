@@ -13,11 +13,13 @@ import Admin from "./routes/admin/Admin";
 import { Outlet } from "react-router-dom";
 import NavBar from "./shared/navbar/NavBar";
 import Footer from "./shared/footer/Footer";
+import NavMenu from "./shared/navmenu/NavMenu";
 
 function BasicLayout() {
   return (
     <>
       <NavBar />
+      <NavMenu />
       <Outlet />
       <Footer />
     </>
