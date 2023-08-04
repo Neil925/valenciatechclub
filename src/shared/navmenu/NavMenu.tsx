@@ -1,16 +1,24 @@
-import React from 'react'
-import './NavMenu.scss'
+import React, { MouseEventHandler } from "react";
+import "./NavMenu.scss";
+import { Link } from "react-router-dom";
 
 export default function NavMenu() {
-    return (
-        <div id='navMenu'>
-            <nav className='nav-links'>
-                <a href='/'>Home</a>
-                <a href='/events'>Events</a>
-                <a href='/members'>Members</a>
-                <a href='/about-us'>About Us</a>
-                <a href='/contact'>Contact</a>
-            </nav>
-        </div>
-    )
+  function handleClick() {
+    var navMenu = document.getElementById("navMenu");
+    navMenu!.style.width = "0";
+  }
+  return (
+    <div id="navMenu">
+      <div id="closeMenu">
+        <button onClick={handleClick} />
+      </div>
+      <nav className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/events">Events</Link>
+        <Link to="/members">Members</Link>
+        <Link to="/about-us">About Us</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+    </div>
+  );
 }
