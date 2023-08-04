@@ -1,6 +1,7 @@
 @import "./_variables";
 
 body {
+  overflow-x: hidden;
   background-color: $primary-bg;
   overflow-x: hidden;
 }

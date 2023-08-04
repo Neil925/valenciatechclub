@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import HomePage from "./routes/home/HomePage";
 import About from "./routes/about/About";
 import Contact from "./routes/contact/Contact";
@@ -9,8 +9,7 @@ import Members from "./routes/members/Members";
 import Events from "./routes/events/Events";
 import Error from "./routes/error/Error";
 import Admin from "./routes/admin/Admin";
-
-import { Outlet } from "react-router-dom";
+import Shadow from "./routes/shadow/Shadow";
 import NavBar from "./shared/navbar/NavBar";
 import Footer from "./shared/footer/Footer";
 import NavMenu from "./shared/navmenu/NavMenu";
@@ -48,6 +47,7 @@ root.render(
           <Route index element={<Admin />} />
         </Route>
         <Route path="*" element={<Error />} />
+        <Route path='/the-eminence-in-shadow' element={<Shadow />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
