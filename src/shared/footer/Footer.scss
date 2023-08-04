@@ -1,32 +1,43 @@
 @import "./_variables";
 
 .footer {
-    background-color: $navbar-bg;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    font-size: clamp(1.5rem, 1vw, 7rem);
+  background-color: $navbar-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  font-size: clamp(1.5rem, 1vw, 7rem);
+  padding: 0 0.5rem;
 }
-.vtechclub{
-    padding: 10px;
+.box {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-img{
-    width: 50px;
+.vtechclub {
+  padding: 10px;
 }
-.socials{
-    display: flex;
-    justify-content: space-around;
+img {
+  width: 50px;
 }
-.social{
-    padding: 10px;
-    color: $navbar-fc;
+// .socials{
+//     position: relative;
+//     right: 50%;
+// }
+// .contact{
+//     position: relative;
+//     right: 0%;
+// }
+.social {
+  padding: 10px;
+  color: $navbar-fc;
 }
 .fa-bounce-hover:hover {
-    -webkit-animation: fa-bounce 1s infinite linear;
-    -moz-animation: fa-bounce 1s infinite linear;
-    -o-animation: fa-bounce 1s infinite linear;
-    animation: fa-bounce 1.25s infinite linear;
-  }
+  -webkit-animation: fa-bounce 1s infinite linear;
+  -moz-animation: fa-bounce 1s infinite linear;
+  -o-animation: fa-bounce 1s infinite linear;
+  animation: fa-bounce 1.25s infinite linear;
+}

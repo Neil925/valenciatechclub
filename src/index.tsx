@@ -9,6 +9,7 @@ import Members from "./routes/members/Members";
 import Events from "./routes/events/Events";
 import Error from "./routes/error/Error";
 import Admin from "./routes/admin/Admin";
+import Shadow from "./routes/shadow/Shadow";
 import NavBar from "./shared/navbar/NavBar";
 import Footer from "./shared/footer/Footer";
 import NavMenu from "./shared/navmenu/NavMenu";
@@ -46,6 +47,7 @@ root.render(
           <Route index element={<Admin />} />
         </Route>
         <Route path="*" element={<Error />} />
+        <Route path='/the-eminence-in-shadow' element={<Shadow />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
