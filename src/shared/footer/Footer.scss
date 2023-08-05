@@ -23,14 +23,10 @@
 img {
   width: 50px;
 }
-// .socials{
-//     position: relative;
-//     right: 50%;
-// }
-// .contact{
-//     position: relative;
-//     right: 0%;
-// }
+.contact{
+    font-size: 20px;
+    white-space: nowrap;
+}
 .social {
   padding: 10px;
   color: $navbar-fc;
