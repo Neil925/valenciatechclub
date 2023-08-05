@@ -6,6 +6,7 @@
   justify-content: start;
   align-items: center;
   font-size: clamp(1.5rem, 1vw, 7rem);
+  height: 15vh;
 }
 
 #navBar>nav {
@@ -14,11 +15,16 @@
 }
 
 #navBar>button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
+  padding: 0;
   margin-right: 3%;
   border: none;
   visibility: collapse;
+  background: none;
 }
 
 @media (max-width: 900px) {
@@ -55,4 +61,8 @@
   display: flexbox;
   justify-content: center;
   align-items: center;
+}
+
+.fa-icon {
+  height: 85%;
 }

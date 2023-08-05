@@ -8,10 +8,7 @@ export default function NavMenu() {
     navMenu!.style.width = "0";
   }
   return (
-    <div id="navMenu">
-      <div id="closeMenu">
-        <button onClick={handleClick} />
-      </div>
+    <div id="navMenu" style={ {width: "0px"}}>
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/events">Events</Link>
