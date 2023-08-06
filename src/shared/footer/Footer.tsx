@@ -16,13 +16,13 @@ export default function Footer() {
         <div className="socials">
           {/* Please add Real Social Links Later <3 */}
           <a href="https://www.youtube.com/watch?v=z3OKd5b2Rlw" target="_blank">
-            <FontAwesomeIcon icon={['fab', 'instagram']} className="social fa-bounce-hover" />
+            <FontAwesomeIcon icon={['fab', 'instagram']} className="social fa-bounce-hover insta" />
           </a>
           <a href="https://www.discord.gg/RRkWy4fVMv" target="_blank">
-            <FontAwesomeIcon icon={['fab', 'discord']} className="social fa-bounce-hover" />
+            <FontAwesomeIcon icon={['fab', 'discord']} className="social fa-bounce-hover discord" />
           </a>
           <a href="https://www.youtube.com/watch?v=a8MZBUoQt68" target="_blank">
-            <FontAwesomeIcon icon={['fab', 'tiktok']} className="social fa-bounce-hover" />
+            <FontAwesomeIcon icon={['fab', 'tiktok']} className="social fa-bounce-hover tiktok" />
           </a>
         </div>
       </div>

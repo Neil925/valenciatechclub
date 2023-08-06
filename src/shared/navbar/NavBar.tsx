@@ -8,14 +8,19 @@ export default function NavBar() {
 
   function handleClick() {
     var navMenu = document.getElementById("navMenu")!;
+    var faIcon = document.getElementById("faIcon")!;
+
     if (expanded) {
       navMenu.style.width = "0";
+      setCheck(prevCheck => !prevCheck);
     }
     else {
+      faIcon.classList.add('change-to-x');
       navMenu.style.width = "300px";
+      setTimeout(() => setCheck(prevCheck => !prevCheck), 200);
     }
 
-    setCheck(prevCheck => !prevCheck);
+    
   }
 
   return (
@@ -32,7 +37,8 @@ export default function NavBar() {
         <Link to='/contact'>Contact</Link>
       </nav>
       <button onClick={handleClick}>
-        <FontAwesomeIcon icon={expanded ? ['fas', 'plus'] : ['fas', 'bars']} className='fa-icon' />
+        <FontAwesomeIcon icon={expanded ? ['fas', 'plus'] : ['fas', 'bars']} id='faIcon'
+          className={expanded ? 'change-to-x' : ''} />
       </button>
     </div>
   )
