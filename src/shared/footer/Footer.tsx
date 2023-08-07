@@ -10,7 +10,6 @@ export default function Footer() {
       <div className="box" style={{ justifyContent: "start" }}>
         <div className="vtechclub">
           <img src="./logo192.png" alt="VTechLogo" />
-          VTech Club
         </div>
       </div>
       <div className="box">
@@ -32,11 +31,11 @@ export default function Footer() {
         <div className="contact">
           <div className="phone">
             <FontAwesomeIcon icon={faPhone} />
-            &nbsp;:123-456-7890
+            &nbsp;: (407) 364-5700
           </div>
           <div className="email">
             <FontAwesomeIcon icon={faEnvelope} />
-            &nbsp;:vtechclub@gmail.com
+            &nbsp;: elkadineil@gmail.com
           </div>
         </div>
       </div>
