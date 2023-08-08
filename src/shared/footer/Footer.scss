@@ -29,14 +29,12 @@
   padding-right: .5rem;
 }
 
-// .socials{
-//     position: relative;
-//     right: 50%;
-// }
-// .contact{
-//     position: relative;
-//     right: 0%;
-// }
+.contact{
+    font-size: 20px;
+    white-space: nowrap;
+    padding-right: 12px;
+}
+
 .social {
   padding: 10px;
   color: $navbar-fc;
