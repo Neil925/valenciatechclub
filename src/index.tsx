@@ -26,7 +26,7 @@ function BasicLayout() {
     <>
       <NavBar />
       <NavMenu />
-      <div className="outet">
+      <div className="outlet">
         <Outlet />
       </div>
       <Footer />
