@@ -6,6 +6,8 @@
   justify-content: start;
   align-items: center;
   font-size: clamp(1.5rem, 1vw, 7rem);
+  height: $navbar-length;
+  color: $navbar-fc;
 }
 
 #navBar>nav {
@@ -14,11 +16,16 @@
 }
 
 #navBar>button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
+  padding: 0;
   margin-right: 3%;
   border: none;
   visibility: collapse;
+  background: none;
 }
 
 @media (max-width: 900px) {
@@ -47,12 +54,40 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .nav-brand>img {
   padding: 0.5rem 0.8rem;
-  width: 80px;
+  width: 9.5rem;
   display: flexbox;
   justify-content: center;
   align-items: center;
+}
+
+#faIcon {
+  color: $navbar-fc;
+  height: 85%;
+}
+
+.change-to-x {
+  animation: shrink .2s 1 normal, rotate .3s .2s 1 normal forwards;
+}
+
+@keyframes shrink {
+  from {
+    transform: scaleY(1)
+  }
+  to {
+    transform: scaleY(.11);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+   to {
+    transform: rotate(45deg);
+   }
 }

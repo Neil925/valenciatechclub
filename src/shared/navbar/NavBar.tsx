@@ -1,18 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./NavBar.scss"
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function NavBar() {
+  const [expanded, setCheck] = useState<boolean>(false);
+
   function handleClick() {
     var navMenu = document.getElementById("navMenu")!;
-    navMenu.style.width = "300px";
+    var faIcon = document.getElementById("faIcon")!;
+
+    if (expanded) {
+      navMenu.style.width = "0";
+      setCheck(prevCheck => !prevCheck);
+    }
+    else {
+      faIcon.classList.add('change-to-x');
+      navMenu.style.width = "300px";
+      setTimeout(() => setCheck(prevCheck => !prevCheck), 200);
+    }
+
+    
   }
 
   return (
     <div id="navBar">
       <div className='nav-brand'>
-        <img src='./logo512.png' alt='VTechLogo' />
-        VTech Club
+        <img src='./text-logo.png' alt='VTechLogo' />
       </div>
       <nav>
         <Link to='/'>Home</Link>
@@ -21,7 +35,10 @@ export default function NavBar() {
         <Link to='/about-us'>About Us</Link>
         <Link to='/contact'>Contact</Link>
       </nav>
-      <button onClick={handleClick} />
+      <button onClick={handleClick}>
+        <FontAwesomeIcon icon={expanded ? ['fas', 'plus'] : ['fas', 'bars']} id='faIcon'
+          className={expanded ? 'change-to-x' : ''} />
+      </button>
     </div>
   )
 }
