@@ -1,6 +1,5 @@
 import React from "react";
 import "./MemberCard.scss";
-import { Card } from "react-bootstrap";
 
 type MemberProp = {
   name: string;
@@ -11,7 +10,7 @@ type MemberProp = {
 const MemberCard = (props: MemberProp) => {
   return (
     <div className="fuck-neil">
-      {/* <div className="Card">
+      <div className="Card">
         <div className="Card-Img">
           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cb08UhKHU2XF7BRKhq8jawHaHZ%26pid%3DApi&f=1&ipt=61ca1f1e1228619ff5f967454c632c25a3db4e893b9e02b9c7c62f789e044a70&ipo=images" />
         </div>
@@ -24,18 +23,7 @@ const MemberCard = (props: MemberProp) => {
         <div className="Card-Description">
           <p>{props.description}</p>
         </div>
-      </div> */}
-      <Card>
-        <Card.Img
-          variant="top"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cb08UhKHU2XF7BRKhq8jawHaHZ%26pid%3DApi&f=1&ipt=61ca1f1e1228619ff5f967454c632c25a3db4e893b9e02b9c7c62f789e044a70&ipo=images"
-        />
-        <Card.Body>
-          <Card.Title>{props.name}</Card.Title>
-          <Card.Subtitle>{props.role}</Card.Subtitle>
-          <Card.Text>{props.description}</Card.Text>
-        </Card.Body>
-      </Card>
+      </div>
     </div>
   );
 };
