@@ -19,7 +19,9 @@ function BasicLayout() {
     <>
       <NavBar />
       <NavMenu />
-      <Outlet />
+      <div className="outet">
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
@@ -29,9 +31,7 @@ function AdminLayout() {
   return <Outlet />;
 }
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -47,7 +47,7 @@ root.render(
           <Route index element={<Admin />} />
         </Route>
         <Route path="*" element={<Error />} />
-        <Route path='/the-eminence-in-shadow' element={<Shadow />} />
+        <Route path="/the-eminence-in-shadow" element={<Shadow />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

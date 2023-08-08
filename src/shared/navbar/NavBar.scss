@@ -6,6 +6,7 @@
   justify-content: start;
   align-items: center;
   font-size: clamp(1.5rem, 1vw, 7rem);
+  height: $navbar-length;
 }
 
 #navBar>nav {

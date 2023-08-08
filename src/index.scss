@@ -5,3 +5,6 @@ body {
   background-color: $primary-bg;
   overflow-x: hidden;
 }
+.outlet{
+  min-height: calc(100vh - ($navbar-length + $footer-length));
+}

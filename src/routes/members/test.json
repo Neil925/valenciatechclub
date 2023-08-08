@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Neil",
+        "role": "President",
+        "description": "Neil is the Administrator"
+    },
+    {
+        "name": "Damien",
+        "role": "Vice President",
+        "description": "Yae Step on Me"
+    },
+    {
+        "name": "Alex",
+        "role": "Illegal",
+        "description": "Im calling ICE"
+    },
+    {
+        "name": "Martonton",
+        "role": "The criminal",
+        "description": "Wanted in 20 different countries"
+    }
+]

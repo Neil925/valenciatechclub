@@ -1,17 +1,12 @@
 @import "./_variables";
 
-#navMenu {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 0;
-  height: 100vh;
-  background-color: $logo-yellow;
-  font-size: 25px;
-  overflow-x: hidden;
-  z-index: 1;
-  transition: 1s;
-  visibility: visible;
+#navBar {
+  background-color: $navbar-bg;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: clamp(1.5rem, 1vw, 7rem);
+  height: $navbar-length;
 }
 
 #navMenu > nav > a {
