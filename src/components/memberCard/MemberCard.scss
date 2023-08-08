@@ -1,32 +1,20 @@
 @import "./_variables";
 
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .card {
-  width: calc(33.33% - 40px); /* Equal spacing, 3 cards in a row */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-color:transparent;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  margin: 10px; 
-  transition: transform 0.3s;
+  background-color: transparent;
+  // transition: transform 0.3s;
 
-  &:hover {
-    transform: translateY(-5px); 
-  }
+  // &:hover {
+  //   transform: translateY(-5px);
+  // }
 
   .card-image {
     width: 100%;
-    height: auto;
-    object-fit: cover; 
-    border-radius: 8px 8px 0 0; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
   }
 
   .card-content {
@@ -48,5 +36,14 @@
       color: #444;
     }
   }
+}
+
+
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 

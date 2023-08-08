@@ -1,7 +1,19 @@
 @import "./_variables";
 
-.member-cards{
-    // display: flex;
-    // justify-self: space-between;
-    
+.member-cards {
+  // display: flex;
+  // justify-content: space-between;
+  // gap: 10px;
+  // flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 1fr));
+  grid-gap: 10px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  
 }
+
