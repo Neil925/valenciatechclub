@@ -2,18 +2,19 @@
 
 #navMenu {
   float: right;
-  height: 85vh;
+  height: calc(100vh - $navbar-length);
   background-color: $logo-yellow;
-  font-size: 1.25rem;
+  font-size: clamp(1.5rem, 1vw, 7rem);
   overflow-x: hidden;
   z-index: 1;
   transition: 1s;
   visibility: visible;
+  background-color: $navbar-bg;
 }
 
 #navMenu > nav > a {
   padding: 1rem 0;
-  color: black;
+  color: $navbar-fc;
   text-decoration: none;
 }
 

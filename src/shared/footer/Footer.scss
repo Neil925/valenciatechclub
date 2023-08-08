@@ -10,6 +10,7 @@
   width: 100vw;
   font-size: clamp(1.5rem, 1vw, 7rem);
   padding: 0 0.5rem;
+  color: $navbar-fc;
 }
 
 .box {
@@ -23,8 +24,9 @@
   padding: 10px;
 }
 
-img {
+.vtechclub>img {
   width: 50px;
+  padding-right: .5rem;
 }
 
 // .socials{
@@ -45,20 +47,4 @@ img {
   -moz-animation: fa-bounce 1s 1 linear;
   -o-animation: fa-bounce 1s 1 linear;
   animation: fa-bounce 1.25s 1 linear;
-}
-
-// .insta {
-  // color: rgb(217,197,4);
-  // Turns out this is impossible without stupid amounts of work ¯\_(ツ)_/¯
-  // https://stackoverflow.com/questions/14633363/can-i-apply-a-gradient-along-an-svg-path
-  // background-image: linear-gradient(45deg, rgba(217, 197, 4, 1) 17%, rgba(244, 6, 20, 1) 39%, rgba(120, 55, 172, 1) 67%);
-  // background-size: 100%;
-  // -webkit-background-clip: border-box;
-  // -moz-background-clip: border-box;
-  // -webkit-text-fill-color: transparent;
-  // -moz-text-fill-color: transparent;
-// }
-
-.discord {
-  color: #5662f6;
 }

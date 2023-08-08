@@ -6,7 +6,8 @@
   justify-content: start;
   align-items: center;
   font-size: clamp(1.5rem, 1vw, 7rem);
-  height: 15vh;
+  height: $navbar-length;
+  color: $navbar-fc;
 }
 
 #navBar>nav {
@@ -53,17 +54,19 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .nav-brand>img {
   padding: 0.5rem 0.8rem;
-  width: 80px;
+  width: 9.5rem;
   display: flexbox;
   justify-content: center;
   align-items: center;
 }
 
 #faIcon {
+  color: $navbar-fc;
   height: 85%;
 }
 
@@ -71,16 +74,12 @@
   animation: shrink .2s 1 normal, rotate .3s .2s 1 normal forwards;
 }
 
-.change-to-x:hover {
-  color: rgb(221, 0, 0);
-}
-
 @keyframes shrink {
   from {
-    transform: scale(1);
+    transform: scaleY(1)
   }
   to {
-    transform: scale(.11);
+    transform: scaleY(.11);
   }
 }
 

@@ -26,8 +26,7 @@ export default function NavBar() {
   return (
     <div id="navBar">
       <div className='nav-brand'>
-        <img src='./logo512.png' alt='VTechLogo' />
-        VTech Club
+        <img src='./text-logo.png' alt='VTechLogo' />
       </div>
       <nav>
         <Link to='/'>Home</Link>
