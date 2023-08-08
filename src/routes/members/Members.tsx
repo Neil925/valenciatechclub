@@ -15,9 +15,11 @@ export default function Members() {
         vero molestiae magni dolor soluta accusamus, error numquam consequatur delectus modi nobis veniam, quasi, tempore est sed
         accusantium! Impedit consequatur, optio, a dolorem quos voluptatibus, natus fugit asperiores hic commodi ex nemo!
       </p>
-      {membersData.map((member, index) => (
-        <MemberCard key={index} name={member.name} role={member.role} description={member.description} />
-      ))}
+      <div className="member-cards">
+        {membersData.map((member, index) => (
+          <MemberCard key={index} name={member.name} role={member.role} description={member.description} />
+        ))}
+      </div>
     </div>
   );
 }
