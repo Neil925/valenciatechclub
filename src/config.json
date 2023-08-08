@@ -5,5 +5,32 @@
         "Build something with the fellas!",
         "A Dennis Hunchuck certified club ✅",
         "We will give you what you need to get started"
+    ],
+    "MembersList":[
+        {
+            "name": "Neil",
+            "role": "HIM",
+            "description": "Solved problems like 1+1"
+        },
+        {
+            "name": "Damien",
+            "role": "Genshin player",
+            "description": "Yae Step on Me"
+        },
+        {
+            "name": "Alex",
+            "role": "Illegal",
+            "description": "Im calling ICE"
+        },
+        {
+            "name": "Martonton",
+            "role": "The criminal",
+            "description": "Wanted in 20 different countries"
+        },
+        {
+            "name": "Lucas",
+            "role": "The Texan",
+            "description": "Has as many guns as he does pounds"
+        }
     ]
 }
