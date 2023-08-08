@@ -5,10 +5,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  // position: fixed;
   bottom: 0;
+  // margin-top: auto;
   width: 100vw;
   font-size: clamp(1.5rem, 1vw, 7rem);
+  margin-top: 2vh;
   padding: 0 0.5rem;
   color: $navbar-fc;
 }
