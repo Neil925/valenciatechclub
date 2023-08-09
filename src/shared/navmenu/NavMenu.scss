@@ -3,7 +3,7 @@
 #navMenu {
   right: 0;
   position: absolute;
-  height: calc(100vh - ($navbar-length + $footer-length));
+  height: 100%;
   background-color: $logo-yellow;
   font-size: clamp(1.5rem, 1vw, 7rem);
   overflow-x: hidden;

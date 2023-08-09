@@ -5,7 +5,34 @@ body {
   background-color: $primary-bg;
   overflow-x: hidden;
   font-family: 'Heebo', sans-serif;
+  color: $font-color;
+  text-align: center;
 }
+
 .outlet{
   min-height: calc(100vh - ($navbar-length + $footer-length));
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+}
+
+.flex-right {
+  @extend .flex;
+  justify-content: right;
+}
+
+.flex-center-col {
+  @extend .flex-center;
+  flex-direction: column;
+}
+
+.section {
+  padding: 1vh 0;
 }

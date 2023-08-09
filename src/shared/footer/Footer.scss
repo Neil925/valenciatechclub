@@ -5,44 +5,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position:relative;
   bottom: 0;
   width: 100vw;
   font-size: clamp(1.5rem, 1vw, 7rem);
   padding: 0 0.5rem;
   color: $navbar-fc;
   height: $footer-length;
-}
 
-.box {
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.vtechclub {
-  padding: 10px;
-}
-
-.vtechclub>img {
-  width: 50px;
-  padding-right: .5rem;
-}
-
-.contact{
-    font-size: 20px;
-    white-space: nowrap;
-    padding-right: 12px;
-}
-
-.social {
-  padding: 10px;
-  color: $navbar-fc;
-}
-
-.fa-bounce-hover:hover {
-  -webkit-animation: fa-bounce 1s 1 linear;
-  -moz-animation: fa-bounce 1s 1 linear;
-  -o-animation: fa-bounce 1s 1 linear;
-  animation: fa-bounce 1.25s 1 linear;
+  .box {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vtechclub {
+    padding: 10px;
+  }
+  
+  .vtechclub>img {
+    width: 50px;
+    padding-right: .5rem;
+  }
+  
+  .contact{
+      font-size: 20px;
+      white-space: nowrap;
+      padding-right: 12px;
+  }
+  
+  .social {
+    padding: 10px;
+    color: $navbar-fc;
+  }
+  
+  .fa-bounce-hover:hover {
+    -webkit-animation: fa-bounce 1s 1 linear;
+    -moz-animation: fa-bounce 1s 1 linear;
+    -o-animation: fa-bounce 1s 1 linear;
+    animation: fa-bounce 1.25s 1 linear;
+  }
 }
