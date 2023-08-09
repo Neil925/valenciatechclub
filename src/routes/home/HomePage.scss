@@ -1,46 +1,74 @@
 @import "./_variables";
 
 .header-hook {
-    width: 100%;
-    min-height: 40vh;
-    color: $font-color;
+  width: 100%;
+  min-height: 40vh;
+  color: $font-color;
 
-    .content-box {
-        width: 80%;
-        height: 100%;
-        font-size: 3rem;
-    }
+  .content-box {
+    width: 80%;
+    height: 100%;
+    font-size: 3rem;
+  }
 
-    .join-us {
-        margin-top: 1rem;
-        font-size: 2.5rem;
-        border: 3px solid black;
-        border-radius: 10px;
-        background-color: $logo-yellow;
-        transition: 1s;
-        transform-origin: bottom;
-    }
+  .join-us {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: $logo-yellow;
+    transition: 1s;
+    transform-origin: bottom;
+  }
 
-    .join-us:hover {
-        transform: scale(1.07);
-    }
+  .join-us:hover {
+    transform: scale(1.07);
+  }
 }
+/* 
+    * Ok so made it where the image and the image-box and text-box each take up half of the about-us div
+    * Also made it where at smaller resolutions the image and text-box get stacked on top of each other
+    ! Problems: 
+    ! At smaller resolutions the footer will mess up and it depends on the height property of the about-us div
+    ! If height is uncommented: The image will clip below the footer making the footer appear in the middle of the image
+    ! If min-height is uncommented: The footer will not be at the very bottom and have a small amount of whitespace 
+    ! also the text-box div will be in the middle center and not at the top center. This doesn't occur if height is used instead.
+    ! If both are commented & if about-us is commented: It will act in the same way as if min-height is uncommented
+*/
 
 .about-us {
-    background-color: $secondary-bg;
-    height: 60vh;
+  background-color: $secondary-bg;
+//   height: 60vh;
+//   min-height: 60vh;
 
+  .image-box {
+    flex: 1;
+    height: 100%;
     img {
-        max-width:  100%;
-        max-height: 100%;
+      width: 100%;
+      height: 100%;
     }
+  }
 
+  .text-box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 40%;
+    
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .text-box,
     .image-box {
-        height: 100%;
+      width: 100%; 
     }
-
-    .text-box {
-        width: 40%;
-        height: 100%;
-    }
+    // just makes either the text-box first of the image-box first
+    // .image-box {
+    //   order: -1; 
+    // }
+  }
 }
