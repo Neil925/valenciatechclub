@@ -42,11 +42,12 @@
   padding: 0 1rem;
   color: $navbar-fc;
   text-decoration: none;
+  // transition: 1s;
 }
 
 #navBar>nav>a:hover {
   // TBD
-  color: rgba(0, 0, 0, 0.501);
+  color: rgb(139, 139, 139);
 }
 
 .nav-brand {
