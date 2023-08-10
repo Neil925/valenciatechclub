@@ -10,27 +10,32 @@
         {
             "name": "Neil",
             "role": "HIM",
-            "description": "Solved problems like 1+1"
+            "description": "Solved problems like 1+1 (Particularly gifted)",
+            "image": "test1.png"
         },
         {
             "name": "Damien",
             "role": "Genshin player",
-            "description": "Yae Step on Me"
+            "description": "Yae Step on Me (Particularly gifted)",
+            "image": "test2.png"
         },
         {
             "name": "Alex",
             "role": "Illegal",
-            "description": "Im calling ICE"
+            "description": "Im calling ICE",
+            "image": "test3.png"
         },
         {
             "name": "Martonton",
             "role": "The criminal",
-            "description": "Wanted in 20 different countries"
+            "description": "Wanted in 20 different countries",
+            "image": "test4.png"
         },
         {
             "name": "Lucas",
             "role": "The Texan",
-            "description": "Has as many guns as he does pounds"
+            "description": "Has as many guns as he does pounds",
+            "image": "test5.jpeg"
         }
     ]
 }

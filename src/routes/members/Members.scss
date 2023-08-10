@@ -1,21 +1,46 @@
 @import "./_variables";
 
-.member-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 1fr));
-  grid-gap: 10px;
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(4, 1fr); 
-  }
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(3, 1fr); 
-  }
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr); 
-  }
-  
-}
+.members {
+  background-color: #e7503c;
+  min-height: calc(100vh - ($navbar-length + $footer-length));
 
+  // TODO: update to Neil's index.scss flex styles classes when merged later
+  .members-text {
+    color: black;
+    margin: 0 10% 0 10%;
+
+    .members-page-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-top: 2%;
+    }
+
+    .members-page-text{
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  .member-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 1fr));
+    grid-gap: 10px;
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
