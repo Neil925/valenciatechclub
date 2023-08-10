@@ -1,45 +1,54 @@
 @import "./_variables";
 
 .members {
-  background-color: #e7503c;
-  min-height: calc(100vh - ($navbar-length + $footer-length));
+  // padding: 0 10vw;
 
-  // TODO: update to Neil's index.scss flex styles classes when merged later
+  width: 100%;
+
+  .border {
+    border: 3px solid black;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h5 {
+      padding: 0 10vw;
+  }
+
   .members-text {
     color: black;
-    margin: 0 10% 0 10%;
+    height: 30vh;
+    width: 100%;
 
     .members-page-title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
       padding-top: 2%;
     }
 
     .members-page-text{
-      display: flex;
-      justify-content: center;
       text-align: justify;
-      align-items: center;
-      height: 100%;
+      height: 50%;
+      font-size: 1.8rem;
     }
+  }
+
+  .grid-item {
+    justify-self: center;
   }
 
   .member-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    @media (max-width: 1000px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    @media (max-width: 800px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media (max-width: 600px) {
+    @media (max-width: 1400px) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width: 500px) {
+    @media (max-width: 930px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }

@@ -43,6 +43,16 @@ body {
   justify-content: right;
 }
 
+.flex-left {
+  @extend .flex;
+  justify-content: left;
+}
+
+.flex-left-col {
+  @extend .flex-left;
+  flex-direction: column;
+}
+
 .flex-center-col {
   @extend .flex-center;
   flex-direction: column;
