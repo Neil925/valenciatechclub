@@ -27,55 +27,64 @@
 }
 
 .about-us {
-  background: rgb(191, 46, 25);
+  // fee531
+  color: #ffe8e4;
+
+  background: rgb(147, 34, 19);
   background: -moz-linear-gradient(
-    159deg,
-    rgba(191, 46, 25, 1) 0%,
-    rgba(235, 165, 155, 1) 100%
+    123deg,
+    rgba(147, 34, 19, 1) 0%,
+    rgba(185, 44, 25, 1) 44%,
+    rgba(210, 49, 27, 1) 60%,
+    rgba(255, 59, 33, 1) 100%
   );
   background: -webkit-linear-gradient(
-    159deg,
-    rgba(191, 46, 25, 1) 0%,
-    rgba(235, 165, 155, 1) 100%
+    123deg,
+    rgba(147, 34, 19, 1) 0%,
+    rgba(185, 44, 25, 1) 44%,
+    rgba(210, 49, 27, 1) 60%,
+    rgba(255, 59, 33, 1) 100%
   );
   background: linear-gradient(
-    159deg,
-    rgba(191, 46, 25, 1) 0%,
-    rgba(235, 165, 155, 1) 100%
+    123deg,
+    rgba(147, 34, 19, 1) 0%,
+    rgba(185, 44, 25, 1) 44%,
+    rgba(210, 49, 27, 1) 60%,
+    rgba(255, 59, 33, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bf2e19",endColorstr="#eba59b",GradientType=1);
-  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#932213",endColorstr="#ff3b21",GradientType=1);
+
   height: 60vh;
   display: table;
 
   .image-box {
     display: table-cell;
-    width: 50%;
     height: 100%;
+    min-width: 40%;
     vertical-align: middle;
 
     img {
-      max-width: calc(100vw * (551 / 360));
-      //   object-fit: contain;
-      border-radius: 10px;
-      border: 3px solid black;
+      height: 80%;
+      max-width: 100%;
+      object-fit: contain;
     }
   }
 
   .text-box {
     display: table-cell;
-    width: 50%;
+    width: auto;
     height: 100%;
-    vertical-align: top;
+    vertical-align: middle;
+    text-align: left;
+    padding: 0 1.5rem;
 
     p {
       text-align: justify;
       font-size: 2rem;
-      padding-left: 1.5rem;
     }
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1250px) {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -84,17 +93,21 @@
       padding-right: 1.5rem;
     }
 
-    .text-box,
     .image-box {
-      width: 100%;
+      visibility: hidden;
+      width: 0;
+      min-width: unset;
+    }
 
-      img {
-        max-width: unset;
-        height: unset;
-        width: 100%;
-        border-radius: 0;
-        border: none;
-      }
+    .text-box {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 700px) {
+    p {
+      text-align: center !important;
     }
   }
 }

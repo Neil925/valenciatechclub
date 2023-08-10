@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+#root {
+  position: absolute;
+}
+
 .outlet {
   min-height: calc(100vh - ($navbar-length + $footer-length));
 }
