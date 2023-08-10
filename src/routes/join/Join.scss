@@ -1,0 +1,58 @@
+@import "./_variables";
+
+.join-us {
+  .where-and-when {
+    background: rgb(252,199,72);
+    background: -moz-linear-gradient(90deg, rgba(252,199,72,1) 0%, rgba(237,178,38,1) 50%, rgba(218,155,2,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(252,199,72,1) 0%, rgba(237,178,38,1) 50%, rgba(218,155,2,1) 100%);
+    background: linear-gradient(90deg, rgba(252,199,72,1) 0%, rgba(237,178,38,1) 50%, rgba(218,155,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcc748",endColorstr="#da9b02",GradientType=1);
+    padding-top: 10px;
+    width: 100vw;
+
+    .where,
+    .when {
+      flex: 1;
+      min-height: 30vh;
+      width: 50vw;
+      padding-bottom: 10px;
+    }
+  }
+
+  .ribbon{
+    height: 10px;
+    background-color: #646f88;
+  }
+
+  .discord-engage-box {
+    background: rgb(255, 61, 33);
+    background: -moz-linear-gradient(90deg, rgba(255, 61, 33, 1) 0%, rgba(191, 46, 25, 1) 50%, rgba(140, 33, 18, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255, 61, 33, 1) 0%, rgba(191, 46, 25, 1) 50%, rgba(140, 33, 18, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 61, 33, 1) 0%, rgba(191, 46, 25, 1) 50%, rgba(140, 33, 18, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff3d21",endColorstr="#8c2112",GradientType=1);
+    min-height: 53vh;
+    .tech-logo-div {
+      width: 50vw;
+      img {
+        max-width: 40vh;
+        object-fit: contain;
+      }
+      .discord-and-engage {
+        padding-top: 10px;
+        .discord,
+        .engage {
+          flex: 1;
+          width: 50vw;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .where-and-when,.discord-engage-box,.discord-and-engage{
+        flex-direction: column;
+    }
+    .discord-and-engage{
+        padding: 20px 0 10px 0;
+    }
+  }
+}

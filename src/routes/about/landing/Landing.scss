@@ -1,0 +1,21 @@
+@import "../_aboutUsVariables";
+
+.shadow-main{
+    height: 100vh;
+    width: 100vw;
+    background-color: $shadow-main-bg-1;
+    color: $shadow-grey;
+
+    .shadow-header{
+        background-color: $shadow-black-1;
+        height: 10vh;
+        width: 100vw;
+
+        .diablos-intro{
+            padding-top: 15px;
+        }
+        .enemy-span{
+            color: $shadow-red;
+        }
+    }
+}
