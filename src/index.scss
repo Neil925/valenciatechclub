@@ -3,18 +3,30 @@
 body {
   overflow-x: hidden;
   background-color: $primary-bg;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   color: $font-color;
   text-align: center;
 }
 
-.outlet{
+.outlet {
   min-height: calc(100vh - ($navbar-length + $footer-length));
 }
 
 .flex {
   display: flex;
   align-items: center;
+}
+
+.flex-top {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.flex-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 .flex-center {
