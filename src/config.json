@@ -3,13 +3,86 @@
         "Did you try turning it off and on again?",
         "We have pizza.",
         "Build something with the fellas!",
-        "A Dennis Hunchuck approved club ✅",
-        "We will give you what you need to get started!",
         "The best place to talk with fellow techies without feeling awkward cause of the ongoing lecture!",
         "We have a Discord server!",
         "Want to learn some python?",
         "People are a great motivator for learning!",
         "The president will personally host a Minecraft server for you if you join.",
-        "Click the button. Do it. Right now."
+        "Click the button. Do it. Right now.",
+        "A Dennis Hunchuck approved club ✅",
+        "We will give you what you need to get started.",
+        "Come by and use our VR headset!",
+        "Try new things with new friends!",
+        "There is a none-zero chance of becoming a billionaire by joining."
+    ],
+    "Officers":[
+        {
+            "name": "Neil Elkadi",
+            "role": "President",
+            "description": "I can add 1 + 1. Which is 10 😎",
+            "image": "test1.png"
+        },
+        {
+            "name": "Damien Bowling",
+            "role": "Vice President",
+            "description": "Plays Genshin and League. Yes it's terminal.",
+            "image": "test2.png"
+        },
+        {
+            "name": "Thomas Jarrett",
+            "role": "Secretary",
+            "description": "Absolute chad.",
+            "image": "test3.png"
+        },
+        {
+            "name": "Bharat Khatyal",
+            "role": "Marketing Manager",
+            "description": "Full time big brainer.",
+            "image": "test4.png"
+        },
+        {
+            "name": "Dillon Hardy",
+            "role": "IT Manager",
+            "description": "Programs in his sleep.",
+            "image": "test5.jpeg"
+        },
+        {
+            "name": "Emily Hikade",
+            "role": "General Officer",
+            "description": "Advises the US president on her free time.",
+            "image": "test5.jpeg"
+        }
+    ],
+    "RetiredOfficers": [
+        {
+            "name": "Alexander Alen",
+            "role": "Retired as President",
+            "description": "Bench presses mountains.",
+            "image": "test5.jpeg"
+        },
+        {
+            "name": "Carlos Rivera",
+            "role": "Retired as Vice President",
+            "description": "Has helped 8,508,524 old ladies cross the street.",
+            "image": "test5.jpeg"
+        },
+        {
+            "name": "Fritzon Lewis",
+            "role": "Retired as Secretary",
+            "description": "Maxed out his charisma stat prior to spawning in.",
+            "image": "test5.jpeg"
+        },
+        {
+            "name": "Micheal Tran",
+            "role": "Retired as Treasurer",
+            "description": "Money is gravitationally bound to him as though magnetized.",
+            "image": "test5.jpeg"
+        }
+    ],
+    "MembersOfHonor": [
+
+    ],
+    "Members": [
+
     ]
 }

@@ -1,19 +1,39 @@
 @import "./_variables";
 
-.member-cards {
-  // display: flex;
-  // justify-content: space-between;
-  // gap: 10px;
-  // flex-wrap: nowrap;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 1fr));
-  grid-gap: 10px;
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr); 
-  }
-  
-}
+.members {
+  // padding: 0 10vw;
 
+  width: 100%;
+
+  .border {
+    border: 3px solid black;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h5 {
+    padding: 0 10vw;
+  }
+
+  .members-text {
+    color: black;
+    height: 30vh;
+    width: 100%;
+
+    .members-page-title {
+      padding-top: 2%;
+    }
+
+    .members-page-text {
+      text-align: justify;
+      height: 50%;
+      font-size: 1.8rem;
+    }
+  }
+}

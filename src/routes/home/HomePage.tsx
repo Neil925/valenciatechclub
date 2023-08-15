@@ -33,7 +33,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="image-box">
-          <img src="./logo512.png" />
+          <img src="./logo512.png" alt='TechClub Logo'/>
         </div>
       </div>
     </div>
