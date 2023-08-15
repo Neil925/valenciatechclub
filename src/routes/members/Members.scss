@@ -18,7 +18,7 @@
   }
 
   h5 {
-      padding: 0 10vw;
+    padding: 0 10vw;
   }
 
   .members-text {
@@ -30,26 +30,10 @@
       padding-top: 2%;
     }
 
-    .members-page-text{
+    .members-page-text {
       text-align: justify;
       height: 50%;
       font-size: 1.8rem;
-    }
-  }
-
-  .grid-item {
-    justify-self: center;
-  }
-
-  .member-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    @media (max-width: 1400px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: 930px) {
-      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

@@ -8,7 +8,7 @@ export default function MemberCard(props: {
 }) {
   return (
     <div className="card border">
-      <img className="profile-picture border" src={props.imageUrl} />
+      <img className="profile-picture border" src={props.imageUrl} alt="club member"/>
       <div className="card-content border">
         <h2 className="card-title">{props.member.name}</h2>
         <h3 className="card-subtitle">{props.member.role}</h3>

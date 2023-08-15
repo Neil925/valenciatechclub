@@ -24,7 +24,7 @@ export default function NavBar() {
   }
 
   return (
-    <div id="navBar">
+    <div id="navBar" className='flex-center'>
       <div className='nav-brand'>
         <img src='./text-logo.png' alt='VTechLogo' />
       </div>
