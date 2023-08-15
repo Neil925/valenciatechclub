@@ -32,7 +32,7 @@ export default function NavBar() {
         <Link to='/'>Home</Link>
         <Link to='/events'>Events</Link>
         <Link to='/members'>Members</Link>
-        <Link to='/about-us'>About Us</Link>
+        <Link to='/join-us'>Join Us</Link>
         <Link to='/contact'>Contact</Link>
       </nav>
       <button onClick={handleClick}>

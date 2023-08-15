@@ -1,0 +1,1 @@
+export const aboutus = "/the-eminence-in-shadow/";
