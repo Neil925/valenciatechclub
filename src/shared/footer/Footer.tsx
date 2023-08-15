@@ -20,7 +20,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      {/* Add real contact information */}
       <div className="box" style={{ justifyContent: "end" }}>
         <div className="contact">
           <div className="phone">

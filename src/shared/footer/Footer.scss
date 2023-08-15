@@ -7,14 +7,14 @@
   align-items: center;
   position:relative;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   font-size: clamp(1.5rem, 1vw, 7rem);
   padding: 0 0.5rem;
   color: $navbar-fc;
   height: $footer-length;
 
   .box {
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;

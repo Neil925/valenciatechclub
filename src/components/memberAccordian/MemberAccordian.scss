@@ -7,6 +7,8 @@
 
     h2 {
       padding-left: 30px;
+      padding-top: 10px;
+      font-size: clamp(2.2rem, 3.8vw, 2.8rem);
     }
 
     .accordian-icon {
@@ -16,7 +18,7 @@
     }
 
     .accordian-icon.canPlus {
-        transition: .5s;
+      transition: 0.5s;
     }
   }
 
