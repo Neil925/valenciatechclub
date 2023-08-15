@@ -20,13 +20,13 @@
             "name": "Neil Elkadi",
             "role": "President",
             "description": "I can add 1 + 1. Which is 10 😎",
-            "image": "test1.png"
+            "image": "Neil.jpg"
         },
         {
             "name": "Damien Bowling",
             "role": "Vice President",
             "description": "Plays Genshin and League. Yes it's terminal.",
-            "image": "test2.png"
+            "image": "Damien.jpg"
         },
         {
             "name": "Thomas Jarrett",
@@ -38,7 +38,7 @@
             "name": "Bharat Khatyal",
             "role": "Marketing Manager",
             "description": "Full time big brainer.",
-            "image": "test4.png"
+            "image": "Bharat.png"
         },
         {
             "name": "Dillon Hardy",
