@@ -47,7 +47,7 @@ root.render(
         <Route path="/" element={<BasicLayout />}>
           <Route index element={<HomePage />} />
           <Route path="join-us" element={<Join />} />
-          <Route path="contact" element={<Contact />} />
+          {/* <Route path="contact" element={<Contact />} /> */}
           <Route path="members" element={<Members />} />
           <Route path="events" element={<Events />} />
         </Route>

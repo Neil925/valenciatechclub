@@ -9,7 +9,7 @@ export default function NavMenu() {
         <Link to="/events">Events</Link>
         <Link to="/members">Members</Link>
         <Link to="/join-us">Join Us</Link>
-        <Link to="/contact">Contact</Link>
+        {/* <Link to="/contact">Contact</Link> */}
       </nav>
     </div>
   );
