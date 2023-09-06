@@ -5,6 +5,7 @@
   font-size: clamp(1.5rem, 1vw, 7rem);
   height: $navbar-length;
   color: $navbar-fc;
+  width: 100vw;
 
   nav {
     margin-left: auto;
@@ -23,11 +24,16 @@
   
   @media (max-width: 900px) {
     nav {
+      display: none;
       visibility: collapse;
+      width: 0;
+      margin-left: 0;
+      padding-right: 0;
     }
   
     button {
       visibility: visible;
+      margin-left: auto;
     }
   }
   
