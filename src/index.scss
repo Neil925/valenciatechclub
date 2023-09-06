@@ -15,6 +15,15 @@ body {
   height: 100%;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
 #root {
   position: absolute;
   width: 100vw;
