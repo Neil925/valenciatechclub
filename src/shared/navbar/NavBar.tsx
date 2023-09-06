@@ -20,14 +20,16 @@ export default function NavBar() {
       setTimeout(() => setCheck(prevCheck => !prevCheck), 200);
     }
 
-    
+
   }
 
   return (
     <div id="navBar" className='flex-center'>
-      <div className='nav-brand'>
-        <img src='./text-logo.png' alt='VTechLogo' />
-      </div>
+      <Link to="/">
+        <div className='nav-brand'>
+          <img src='./text-logo.png' alt='VTechLogo' />
+        </div>
+      </Link>
       <nav>
         <Link to='/'>Home</Link>
         <Link to='/events'>Events</Link>

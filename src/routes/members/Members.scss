@@ -10,21 +10,13 @@
   }
 
   h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h5 {
-    padding: 0 10vw;
+    font-size: clamp(2.6rem, 4vw, 3.7rem);
   }
 
   .members-text {
     color: black;
-    height: 30vh;
     width: 100%;
+    margin-bottom: 3vh;
 
     .members-page-title {
       padding-top: 2%;
@@ -33,7 +25,8 @@
     .members-page-text {
       text-align: justify;
       height: 50%;
-      font-size: 1.8rem;
+      font-size: clamp(1rem, 4vw, 2.2rem);
+      padding: 0 10vw;
     }
   }
 }

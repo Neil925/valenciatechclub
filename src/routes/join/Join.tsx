@@ -8,9 +8,9 @@ export default function Join() {
         TODO: Change emojis with FA icons/pngs
     */
 
-    <div className="join-us-div">
+    <div className="join-us-div full-w">
       <div className="whitespace"></div>
-      <div className="join-us-ribbon flex-center-col">
+      <div className="join-us-ribbon flex-center-col full-w ">
         <div className="join-us-ribbon-text flex-center-col">
           <h1>📣 Join Us at Valencia Tech Club! 🚀</h1>
           <h3>

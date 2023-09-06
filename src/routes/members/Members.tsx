@@ -1,5 +1,4 @@
-import React, { useState, useEffect, ReactNode } from "react";
-import MemberCard from "../../components/memberCard/MemberCard";
+import React, { useState, useEffect } from "react";
 import config from "../../config.json";
 import "./Members.scss";
 import { Member } from "../../utilities/types";
@@ -41,10 +40,10 @@ export default function Members() {
     <div className="members">
       <div className="members-text">
         <h1 className="members-page-title flex-center"><b>Meet The Club Members</b></h1>
-        <h5 className="members-page-text flex-center">
+        <p className="members-page-text flex-center">
           Building a community is a collaborative effort partaken by some of the coolest people on campus.
           Except for that Neil guy, he's just kinda okay.
-        </h5>
+        </p>
       </div>
       {OfficerList.length > 0 &&
         <MemberAccordian title="Officers" images={loadedImages} list={OfficerList}/>
