@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
@@ -21,12 +21,28 @@ import { aboutus } from "./utilities/helper";
 
 library.add(fab, fas);
 
-
 function BasicLayout() {
+  const [expanded, setCheck] = useState<boolean>(false);
+
+  function toggleMenu() {
+    var navMenu = document.getElementById("navMenu")!;
+    var faIcon = document.getElementById("faIcon")!;
+
+    if (expanded) {
+      navMenu.style.width = "0";
+      setCheck(prevCheck => !prevCheck);
+    }
+    else {
+      faIcon.classList.add('change-to-x');
+      navMenu.style.width = "300px";
+      setTimeout(() => setCheck(prevCheck => !prevCheck), 200);
+    }
+  }
+
   return (
     <>
-      <NavBar />
-      <NavMenu />
+      <NavBar toggleMenu={toggleMenu} expanded={expanded}/>
+      <NavMenu toggleMenu={toggleMenu} expanded={expanded}/>
       <div className="outlet">
         <Outlet />
       </div>
@@ -56,7 +72,7 @@ root.render(
         </Route>
         <Route path="*" element={<Error />} />
         <Route path={aboutus} >
-          <Route index element={<About />}/>
+          <Route index element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>

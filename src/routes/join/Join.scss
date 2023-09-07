@@ -1,36 +1,26 @@
 @import "./_variables";
 
-.full-w {
-  width: 100%;
-}
+$ribbon-height: 15vh;
+$location-height: 10vh;
 
 .join-us-div {
-  min-height: 100vh;
-  width: 100vw;
+  height: $content-height;
 
-  .icon{
+  .icon {
     height: 30px;
   }
 
-  .whitespace {
-    height: 2.5vh;
-    width: 100vw;
-  }
-
   .join-us-ribbon {
-    width: 100vw;
-    min-height: 35vh;
+    min-height: $ribbon-height;
 
     .join-us-ribbon-text {
-      width: 78vw;
       text-align: justify;
       align-items: center;
     }
   }
 
   .location {
-    width: 100vw;
-    min-height: 10vh;
+    height: $location-height;
     color: white;
 
     background: rgb(74, 88, 115);
@@ -60,25 +50,25 @@
     .where {
       flex: 1;
       width: 50vw;
-      min-height: 10vh;
+      min-height: $location-height;
     }
     .when {
       flex: 1;
       width: 50vw;
-      min-height: 10vh;
+      min-height: $location-height;
     }
     .logo {
-      height: 10vh;
-      
-      img{
-        height: 15vh;
+      height: $location-height;
+
+      img {
+        height: $location-height + 5vh;
       }
     }
   }
 
-  .join-us-body {
-    width: 100vw;
-    min-height: 52.5vh;
+  .join-us-links {
+    height: $content-height - ($location-height + $ribbon-height);
+
     background: rgb(233, 193, 57);
     background: -moz-linear-gradient(
       123deg,
@@ -103,101 +93,170 @@
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9c139",endColorstr="#d8aa0f",GradientType=1);
 
-    .expect {
-      flex: 1;
-      width: 50vw;
-      min-height: 50vh;
+    .flex-between {
+      width: 100%;
+    }
 
-      h4 {
-        padding-top: 5vh;
-      }
-      .no-bullets {
-        list-style: none;
-        padding-left: 0;
-        margin-top: 0;
-        padding-inline-start: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-
-        li {
-          padding-left: 1em;
-          text-indent: -1em;
-          margin: 5px 0;
-        }
-      }
+    .engage {
+      background-color: #af2818;
     }
     .discord {
-      flex: 1;
-      width: 50vw;
-      min-height: 50vh;
+      background-color: #2e358c;
+    }
 
-      .card {
-        background-color: #f0f0f0;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-bottom: 1rem;
-        width: 80%;
-      }
+    .social-card {
+      width: 20vw;
+      height: 40vh;
+      margin-top: 10px;
 
-      .card h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
+      color: white;
 
-      .card p {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-      }
+      border: 4px solid black;
+      border-radius: 3rem;
 
-      .card a {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        font-size: 1.5rem;
-        width: 50%;
-
-        &:hover {
-          background-color: #0056b3;
+      .discord {
+        img {
+          padding-bottom: 100px;
         }
       }
+
+      .engage {
+        background-color: #af2818;
+      }
+
+      h3 {
+        margin-top: 30px;
+        margin-bottom: -30px;
+      }
+    }
+
+    img {
+      width: clamp(80px, 8vw, 1000px);
+      filter: drop-shadow(0 0 0.2rem black);
+    }
+
+    h1 {
+      padding-top: 2rem;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
+
+  @keyframes cyclone {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-1440deg);
+    }
+  }
+
+  #engageImg {
+    animation: cyclone 1.5s ease-in-out 0s 1;
+  }
+
+  .spin {
+    animation: cyclone 1.5s ease-in-out 0s infinite !important;
+  }
+
+  @keyframes bounce {
+    to {
+      transform: translateY(-5px);
+    }
+  }
+
+  #discordImg {
+    animation: bounce 0.5s 0s 3;
+    animation-timing-function: cubic-bezier(1, 4, 1, -4) !important;
+  }
+
+  .bounce {
+    animation: bounce 0.5s 0s infinite !important;
+    animation-timing-function: cubic-bezier(1, 4, 1, -4) !important;
+  }
+
   @media (max-width: 1250px) {
     overflow: hidden;
-    .whitespace{
-      visibility: collapse;
-      display: none;
-    }
-    
-    .location{
+
+    .location {
+      height: 30vh;
+
       display: flex;
       flex-direction: column;
       align-items: center;
-      .where,.when{
+      .where,
+      .when {
         width: 100%;
       }
-      .logo{
+
+      .logo {
         visibility: collapse;
       }
     }
 
-    .join-us-body{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      .expect,.discord{
-        width: 100%;
+    .join-us-links {
+      height: calc(
+        $content-height - ($location-height + $ribbon-height + 20vh)
+      );
+
+      // display: block;
+
+      .flex-between {
+        flex-direction: column;
       }
 
-    }
+      .small-card {
+        width: 95vw;
+        height: 30vh;
+        border-radius: 20px;
+        background-color: white;
+        border: 2px solid black;
+        overflow: hidden;
+      }
 
+      .discord {
+        border-bottom: 1px solid black !important;
+      }
+
+      .engage {
+        border-top: 1px solid black !important;
+      }
+
+      .social-card {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+
+        padding-left: 20px;
+
+        flex-direction: row;
+        justify-content: left;
+
+        border: none;
+        border-radius: 0;
+
+        h3 {
+          padding: 0;
+          margin: 0 0 0 0;
+          width: 100%;
+          right: 0;
+          position: absolute;
+
+          @media (max-width: 450px) {
+            position: relative;
+            width: unset;
+            margin-left: 15px;
+          }
+        }
+
+        .discord {
+          img {
+            padding-bottom: 100px;
+          }
+        }
+      }
+    }
   }
 }

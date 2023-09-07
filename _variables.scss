@@ -10,3 +10,4 @@ $logo-red: #bf2e19;
 
 $navbar-length: 9vh;
 $footer-length: 8vh;
+$content-height: calc(100vh - ($navbar-length + $footer-length));

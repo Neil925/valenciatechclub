@@ -42,7 +42,7 @@ export default function Members() {
         <h1 className="members-page-title flex-center"><b>Meet The Club Members</b></h1>
         <p className="members-page-text flex-center">
           Building a community is a collaborative effort partaken by some of the coolest people on campus.
-          Except for that Neil guy, he's just kinda okay.
+          Except for that Neil guy, he's just kinda okay. (P.S. this page is still recieving updates)
         </p>
       </div>
       {OfficerList.length > 0 &&
