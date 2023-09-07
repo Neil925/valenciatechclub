@@ -1,6 +1,6 @@
 @import "./_variables";
 
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
   height: device-height;
 }
@@ -15,7 +15,8 @@ body {
   height: 100%;
 }
 
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -30,7 +31,7 @@ body.modal-open {
 }
 
 .outlet {
-  min-height: calc(100vh - ($navbar-length + $footer-length));
+  min-height: $content-height;
 }
 
 .flex {
@@ -53,6 +54,11 @@ body.modal-open {
 .flex-center {
   @extend .flex;
   justify-content: center;
+}
+
+.flex-between {
+  @extend .flex;
+  justify-content: space-around;
 }
 
 .flex-right {

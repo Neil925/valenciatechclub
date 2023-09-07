@@ -24,7 +24,7 @@ export default function HomePage() {
         <div className="text-box">
           <div className="paragraph">
             <h1 className='section'><b>About Tech Club</b></h1>
-            <p>Valencia Technology Club is a palce dedicated to building a friendly environment for
+            <p>Valencia Technology Club is a place dedicated to building a friendly environment for
               fellow tech majors to meet, network, and motivate one another in persuit of our career path.
               <br /><br />
               We provide various engaging activities such as: programming workshops, desktop building, and

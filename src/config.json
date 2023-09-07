@@ -31,13 +31,13 @@
         {
             "name": "Thomas Jarrett",
             "role": "Secretary",
-            "description": "Absolute chad.",
-            "image": "test3.png"
+            "description": "I love chipin in! 😆",
+            "image": "Thomas.jpg"
         },
         {
             "name": "Bharat Khatyal",
             "role": "Marketing Manager",
-            "description": "Full time big brainer.",
+            "description": "Full Stack Software Developer | Cloud Architecture and Generative AI Specialist | Driving Rapid Application Development and Iterative Testing.",
             "image": "Bharat.png"
         },
         {
@@ -48,9 +48,9 @@
         },
         {
             "name": "Emily Hikade",
-            "role": "General Officer",
-            "description": "Advises the US president on her free time.",
-            "image": "test5.jpeg"
+            "role": "Social Media Manager",
+            "description": "Social media manager, manages the social media.",
+            "image": "emily.jpg"
         }
     ],
     "RetiredOfficers": [
@@ -69,8 +69,8 @@
         {
             "name": "Fritzon Lewis",
             "role": "Retired as Secretary",
-            "description": "Maxed out his charisma stat prior to spawning in.",
-            "image": "test5.jpeg"
+            "description": "Updating the club on changes and proper guidelines to follow to succeed.",
+            "image": "Fritz.jpg"
         },
         {
             "name": "Micheal Tran",
@@ -80,7 +80,12 @@
         }
     ],
     "MembersOfHonor": [
-
+        {
+            "name": "Kevin C.",
+            "role": "",
+            "description": "THAT GUY",
+            "image": "Thatguy.jpg"
+        }
     ],
     "Members": [
 
