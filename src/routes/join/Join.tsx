@@ -49,7 +49,7 @@ export default function Join() {
         <div className="when flex-center-col">
           <h3>
             <img src={calendar} alt="calendar icon" className="icon" />
-            &nbsp; When: Every Wednesday, from 1:00 PM to 4:00 PM
+            &nbsp; When: Every Thursday, from 1:00 PM to 4:00 PM
           </h3>
         </div>
       </div>
